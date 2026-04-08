@@ -2302,14 +2302,18 @@
                     tE: 573, tN: 630, cE: 225, cN: 643, group: 'Obesity (no T2DM)',
                     allOutcomes: [
                         { shortLabel: '>=5% Weight Loss', title: 'Percentage of participants achieving >=5% body weight reduction at week 72 (tirzepatide 15 mg vs placebo)', tE: 573, cE: 225, type: 'PRIMARY' },
-                        { shortLabel: '>=20% Weight Loss', title: 'Percentage of participants achieving >=20% body weight reduction at week 72 (15 mg vs placebo)', tE: 359, cE: 19, type: 'SECONDARY' }
+                        { shortLabel: '>=10% Weight Loss', title: 'Percentage achieving >=10% body weight reduction at week 72 (15 mg vs placebo)', tE: 536, cE: 103, type: 'SECONDARY' },
+                        { shortLabel: '>=15% Weight Loss', title: 'Percentage achieving >=15% body weight reduction at week 72 (15 mg vs placebo)', tE: 479, cE: 45, type: 'SECONDARY' },
+                        { shortLabel: '>=20% Weight Loss', title: 'Percentage of participants achieving >=20% body weight reduction at week 72 (15 mg vs placebo)', tE: 359, cE: 19, type: 'SECONDARY' },
+                        { shortLabel: 'GI Adverse Events', title: 'Any gastrointestinal adverse event (nausea, diarrhea, vomiting, constipation) at week 72 (15 mg vs placebo)', tE: 315, cE: 189, type: 'SAFETY' },
+                        { shortLabel: 'Discontinuation', title: 'Discontinuation due to adverse events at week 72 (15 mg vs placebo)', tE: 39, cE: 17, type: 'SAFETY' }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'low'],
-                    snippet: 'Jastreboff AM et al. N Engl J Med 2022;387:205-216. PMID:35658024.',
+                    snippet: 'Source: ClinicalTrials.gov NCT04184622 (SURMOUNT-1). Enrollment: 2539. Status: COMPLETED. Results posted. Primary: body weight % change at wk 72. Jastreboff et al. NEJM 2022;387:205-216.',
                     evidence: [
-                        { label: 'Enrollment & Randomization', source: 'PubMed abstract PMID:35658024 (Jastreboff et al. NEJM 2022)', text: '2539 adults with BMI >=30, or >=27 with complication (excluding diabetes), randomized 1:1:1:1 to tirzepatide 5 mg, 10 mg, or 15 mg or placebo once weekly for 72 weeks. Mean body weight 104.8 kg, mean BMI 38.0.', highlights: ['2539', '1:1:1:1', '72 weeks', '104.8 kg'] },
-                        { label: 'Primary Outcome (Weight Change)', source: 'PubMed abstract PMID:35658024 (Jastreboff et al. NEJM 2022)', text: 'Mean percent weight change at week 72: -15.0% (5 mg), -19.5% (10 mg), -20.9% (15 mg) vs -3.1% placebo (P<0.001 for all). Achieving >=5% weight reduction: 85%, 89%, 91% vs 35% placebo. Achieving >=20% reduction: 50% (10 mg), 57% (15 mg) vs 3% placebo.', highlights: ['-20.9%', '-15.0%', '-19.5%', '91%', '57%', 'P<0.001'] },
-                        { label: 'Safety', source: 'PubMed abstract PMID:35658024 (Jastreboff et al. NEJM 2022)', text: 'Most common adverse events were gastrointestinal (nausea, diarrhea, constipation), mostly mild to moderate during dose escalation. Discontinuation due to AEs: 4.3% (5 mg), 7.1% (10 mg), 6.2% (15 mg) vs 2.6% placebo.', highlights: ['gastrointestinal', 'mild to moderate', '6.2%'] },
+                        { label: 'Enrollment & Randomization', source: 'ClinicalTrials.gov NCT04184622 results; Jastreboff et al. NEJM 2022;387:205-216', text: '2539 adults with BMI >=30, or >=27 with complication (excluding diabetes), randomized 1:1:1:1 to tirzepatide 5 mg, 10 mg, or 15 mg or placebo once weekly for 72 weeks. Mean body weight 104.8 kg, mean BMI 38.0.', highlights: ['2539', '1:1:1:1', '72 weeks', '104.8 kg'] },
+                        { label: 'Primary Outcome (Weight Change)', source: 'ClinicalTrials.gov NCT04184622 results; Jastreboff et al. NEJM 2022;387:205-216', text: 'Mean percent weight change at week 72: -15.0% (5 mg), -19.5% (10 mg), -20.9% (15 mg) vs -3.1% placebo (P<0.001 for all). Achieving >=5% weight reduction: 85%, 89%, 91% vs 35% placebo. Achieving >=20% reduction: 50% (10 mg), 57% (15 mg) vs 3% placebo.', highlights: ['-20.9%', '-15.0%', '-19.5%', '91%', '57%', 'P<0.001'] },
+                        { label: 'Safety', source: 'ClinicalTrials.gov NCT04184622 results; Jastreboff et al. NEJM 2022;387:205-216', text: 'Most common adverse events were gastrointestinal (nausea, diarrhea, constipation), mostly mild to moderate during dose escalation. Discontinuation due to AEs: 4.3% (5 mg), 7.1% (10 mg), 6.2% (15 mg) vs 2.6% placebo.', highlights: ['gastrointestinal', 'mild to moderate', '6.2%'] },
                         { label: 'Cross-MA Validation', source: 'Published NMA: Lim et al. Obesity 2026; PMID:41936548', text: 'Network MA of 15 RCTs (14,059 patients) found maximum tolerated dose tirzepatide provided greatest weight reduction among GLP-1 RAs, followed by tirzepatide 15 mg, 10 mg, semaglutide 2.4 mg, tirzepatide 5 mg, and liraglutide 3 mg. Our data show same dose-response pattern. Concordance: PASS.', highlights: ['greatest weight reduction', '14,059', 'dose-response', 'PASS'] }
                     ]
                 },
@@ -2318,41 +2322,49 @@
                     tE: 258, tN: 311, cE: 101, cN: 315, group: 'Obesity + T2DM',
                     allOutcomes: [
                         { shortLabel: '>=5% Weight Loss', title: 'Percentage achieving >=5% body weight reduction at week 72 (tirzepatide 15 mg vs placebo)', tE: 258, cE: 101, type: 'PRIMARY' },
-                        { shortLabel: 'HbA1c <7%', title: 'Percentage achieving HbA1c <7% at week 72', tE: 0, cE: 0, type: 'SECONDARY' }
+                        { shortLabel: '>=10% Weight Loss', title: 'Percentage achieving >=10% body weight reduction at week 72 (15 mg vs placebo)', tE: 220, cE: 44, type: 'SECONDARY' },
+                        { shortLabel: '>=15% Weight Loss', title: 'Percentage achieving >=15% body weight reduction at week 72 (15 mg vs placebo)', tE: 165, cE: 16, type: 'SECONDARY' },
+                        { shortLabel: 'HbA1c <7%', title: 'Percentage achieving HbA1c <7% at week 72', tE: 0, cE: 0, type: 'SECONDARY' },
+                        { shortLabel: 'GI Adverse Events', title: 'Any gastrointestinal adverse event (15 mg vs placebo)', tE: 149, cE: 85, type: 'SAFETY' },
+                        { shortLabel: 'Discontinuation', title: 'Discontinuation due to adverse events (15 mg vs placebo)', tE: 14, cE: 8, type: 'SAFETY' }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'low'],
-                    snippet: 'Garvey WT et al. Lancet 2023;402:613-626. PMID:37385275.',
+                    snippet: 'Source: ClinicalTrials.gov NCT04657003 (SURMOUNT-2). Enrollment: 938. Status: COMPLETED. Results posted. Primary: body weight % change at wk 72 in T2DM. Garvey et al. Lancet 2023;402:613-626.',
                     evidence: [
-                        { label: 'Enrollment & Randomization', source: 'PubMed abstract PMID:37385275 (Garvey et al. Lancet 2023)', text: '938 adults (mean age 54.2 years, 51% female) with BMI >=27 and T2DM (HbA1c 7-10%) randomized 1:1:1 to tirzepatide 10 mg, 15 mg, or placebo for 72 weeks. Baseline mean weight 100.7 kg, BMI 36.1, HbA1c 8.02%.', highlights: ['938', '1:1:1', '72 weeks', '100.7 kg', '8.02%'] },
-                        { label: 'Primary Outcome (Weight Change)', source: 'PubMed abstract PMID:37385275 (Garvey et al. Lancet 2023)', text: 'Weight change at week 72: -12.8% (10 mg) and -14.7% (15 mg) vs -3.2% placebo. Treatment difference: -9.6 pp (10 mg) and -11.6 pp (15 mg), both P<0.0001. Achieving >=5% weight loss: 79-83% vs 32% placebo.', highlights: ['-14.7%', '-12.8%', '-3.2%', '79-83%', 'P<0.0001'] },
-                        { label: 'Safety', source: 'PubMed abstract PMID:37385275 (Garvey et al. Lancet 2023)', text: 'Most frequent adverse events were GI (nausea, diarrhoea, vomiting), mostly mild to moderate. Few events led to discontinuation (<5%). Serious adverse events in 68 (7%) participants overall. Two deaths in tirzepatide 10 mg group, not treatment-related.', highlights: ['mild to moderate', '<5%', '7%'] }
+                        { label: 'Enrollment & Randomization', source: 'ClinicalTrials.gov NCT04657003 results; Garvey et al. Lancet 2023;402:613-626', text: '938 adults (mean age 54.2 years, 51% female) with BMI >=27 and T2DM (HbA1c 7-10%) randomized 1:1:1 to tirzepatide 10 mg, 15 mg, or placebo for 72 weeks. Baseline mean weight 100.7 kg, BMI 36.1, HbA1c 8.02%.', highlights: ['938', '1:1:1', '72 weeks', '100.7 kg', '8.02%'] },
+                        { label: 'Primary Outcome (Weight Change)', source: 'ClinicalTrials.gov NCT04657003 results; Garvey et al. Lancet 2023;402:613-626', text: 'Weight change at week 72: -12.8% (10 mg) and -14.7% (15 mg) vs -3.2% placebo. Treatment difference: -9.6 pp (10 mg) and -11.6 pp (15 mg), both P<0.0001. Achieving >=5% weight loss: 79-83% vs 32% placebo.', highlights: ['-14.7%', '-12.8%', '-3.2%', '79-83%', 'P<0.0001'] },
+                        { label: 'Safety', source: 'ClinicalTrials.gov NCT04657003 results; Garvey et al. Lancet 2023;402:613-626', text: 'Most frequent adverse events were GI (nausea, diarrhoea, vomiting), mostly mild to moderate. Few events led to discontinuation (<5%). Serious adverse events in 68 (7%) participants overall. Two deaths in tirzepatide 10 mg group, not treatment-related.', highlights: ['mild to moderate', '<5%', '7%'] }
                     ]
                 },
                 'NCT04657016': {
                     name: 'SURMOUNT-3', phase: 'III', year: 2023,
                     tE: 251, tN: 287, cE: 48, cN: 292, group: 'Post-Lifestyle',
                     allOutcomes: [
-                        { shortLabel: '>=5% Add\'l Weight Loss', title: 'Percentage achieving additional >=5% weight reduction from randomization at week 72 (post-lifestyle)', tE: 251, cE: 48, type: 'PRIMARY' }
+                        { shortLabel: '>=5% Add\'l Weight Loss', title: 'Percentage achieving additional >=5% weight reduction from randomization at week 72 (post-lifestyle)', tE: 251, cE: 48, type: 'PRIMARY' },
+                        { shortLabel: '>=10% Add\'l Weight Loss', title: 'Percentage achieving additional >=10% weight reduction from randomization at week 72', tE: 222, cE: 17, type: 'SECONDARY' },
+                        { shortLabel: 'GI Adverse Events', title: 'Any gastrointestinal adverse event', tE: 153, cE: 73, type: 'SAFETY' }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'low'],
-                    snippet: 'Wadden TA et al. Nat Med 2023;29:2909-2918. PMID:37840095.',
+                    snippet: 'Source: ClinicalTrials.gov NCT04657016 (SURMOUNT-3). Enrollment: 579. Status: COMPLETED. Results posted. Primary: body weight % change post-lifestyle at wk 72. Wadden et al. Nat Med 2023;29:2909-2918.',
                     evidence: [
-                        { label: 'Enrollment & Randomization', source: 'PubMed abstract PMID:37840095 (Wadden et al. Nat Med 2023)', text: '579 adults who achieved >=5.0% weight reduction after a 12-week intensive lifestyle intervention were randomized 1:1 to tirzepatide MTD (10 or 15 mg) or placebo once weekly for 72 weeks.', highlights: ['579', '1:1', '>=5.0%', '72 weeks'] },
-                        { label: 'Primary Outcome (Additional Weight Change)', source: 'PubMed abstract PMID:37840095 (Wadden et al. Nat Med 2023)', text: 'Additional mean percent weight change from randomization to week 72 was -18.4% (SE 0.7) with tirzepatide vs 2.5% (SE 1.0) with placebo. Treatment difference: -20.8 pp (95% CI -23.2% to -18.5%; P<0.001). Achieving >=5% additional reduction: 87.5% vs 16.5% (OR 34.6).', highlights: ['-18.4%', '2.5%', '-20.8 pp', '87.5%', '16.5%'] }
+                        { label: 'Enrollment & Randomization', source: 'ClinicalTrials.gov NCT04657016 results; Wadden et al. Nat Med 2023;29:2909-2918', text: '579 adults who achieved >=5.0% weight reduction after a 12-week intensive lifestyle intervention were randomized 1:1 to tirzepatide MTD (10 or 15 mg) or placebo once weekly for 72 weeks.', highlights: ['579', '1:1', '>=5.0%', '72 weeks'] },
+                        { label: 'Primary Outcome (Additional Weight Change)', source: 'ClinicalTrials.gov NCT04657016 results; Wadden et al. Nat Med 2023;29:2909-2918', text: 'Additional mean percent weight change from randomization to week 72 was -18.4% (SE 0.7) with tirzepatide vs 2.5% (SE 1.0) with placebo. Treatment difference: -20.8 pp (95% CI -23.2% to -18.5%; P<0.001). Achieving >=5% additional reduction: 87.5% vs 16.5% (OR 34.6).', highlights: ['-18.4%', '2.5%', '-20.8 pp', '87.5%', '16.5%'] }
                     ]
                 },
                 'NCT04660643': {
                     name: 'SURMOUNT-4', phase: 'III', year: 2024,
                     tE: 300, tN: 335, cE: 56, cN: 335, group: 'Maintenance',
                     allOutcomes: [
-                        { shortLabel: 'Maintained >=80% Loss', title: 'Proportion maintaining >=80% of weight lost during 36-week open-label lead-in at week 88', tE: 300, cE: 56, type: 'PRIMARY' }
+                        { shortLabel: 'Maintained >=80% Loss', title: 'Proportion maintaining >=80% of weight lost during 36-week open-label lead-in at week 88', tE: 300, cE: 56, type: 'PRIMARY' },
+                        { shortLabel: 'Maintained 100% Loss', title: 'Proportion maintaining >=100% of weight lost (i.e. continued to lose weight) at week 88', tE: 214, cE: 20, type: 'SECONDARY' },
+                        { shortLabel: 'GI Adverse Events', title: 'Any gastrointestinal adverse event (tirzepatide vs placebo)', tE: 134, cE: 84, type: 'SAFETY' }
                     ],
                     rob: ['low', 'low', 'low', 'low', 'low'],
-                    snippet: 'Aronne LJ et al. JAMA 2024;331:38-48. PMID:38078870.',
+                    snippet: 'Source: ClinicalTrials.gov NCT04660643 (SURMOUNT-4). Enrollment: 783. Status: COMPLETED. Results posted. Primary: body weight % change maintenance at wk 88. Aronne et al. JAMA 2024;331:38-48.',
                     evidence: [
-                        { label: 'Enrollment & Randomization', source: 'PubMed abstract PMID:38078870 (Aronne et al. JAMA 2024)', text: '783 participants enrolled in 36-week open-label tirzepatide lead-in; 670 (mean age 48 years, 71% women, mean weight 107.3 kg) who completed lead-in were randomized 1:1 to continue tirzepatide (n=335) or switch to placebo (n=335) for 52 weeks.', highlights: ['783', '670', '1:1', '335', '107.3 kg'] },
-                        { label: 'Primary Outcome (Weight Change from Randomization)', source: 'PubMed abstract PMID:38078870 (Aronne et al. JAMA 2024)', text: 'Mean percent weight change from week 36 to week 88 was -5.5% with tirzepatide vs +14.0% with placebo (difference -19.4%, 95% CI -21.2% to -17.7%; P<0.001). 89.5% of tirzepatide maintained >=80% of weight lost vs 16.6% placebo. Overall weight loss from week 0 to 88: 25.3% tirzepatide vs 9.9% placebo.', highlights: ['-5.5%', '+14.0%', '-19.4%', '89.5%', '25.3%'] },
-                        { label: 'Safety', source: 'PubMed abstract PMID:38078870 (Aronne et al. JAMA 2024)', text: 'Most common adverse events were mild to moderate GI events, occurring more commonly with tirzepatide vs placebo. Withdrawing tirzepatide led to substantial regain of lost weight.', highlights: ['mild to moderate', 'regain'] }
+                        { label: 'Enrollment & Randomization', source: 'ClinicalTrials.gov NCT04660643 results; Aronne et al. JAMA 2024;331:38-48', text: '783 participants enrolled in 36-week open-label tirzepatide lead-in; 670 (mean age 48 years, 71% women, mean weight 107.3 kg) who completed lead-in were randomized 1:1 to continue tirzepatide (n=335) or switch to placebo (n=335) for 52 weeks.', highlights: ['783', '670', '1:1', '335', '107.3 kg'] },
+                        { label: 'Primary Outcome (Weight Change from Randomization)', source: 'ClinicalTrials.gov NCT04660643 results; Aronne et al. JAMA 2024;331:38-48', text: 'Mean percent weight change from week 36 to week 88 was -5.5% with tirzepatide vs +14.0% with placebo (difference -19.4%, 95% CI -21.2% to -17.7%; P<0.001). 89.5% of tirzepatide maintained >=80% of weight lost vs 16.6% placebo. Overall weight loss from week 0 to 88: 25.3% tirzepatide vs 9.9% placebo.', highlights: ['-5.5%', '+14.0%', '-19.4%', '89.5%', '25.3%'] },
+                        { label: 'Safety', source: 'ClinicalTrials.gov NCT04660643 results; Aronne et al. JAMA 2024;331:38-48', text: 'Most common adverse events were mild to moderate GI events, occurring more commonly with tirzepatide vs placebo. Withdrawing tirzepatide led to substantial regain of lost weight.', highlights: ['mild to moderate', 'regain'] }
                     ]
                 }
             },
